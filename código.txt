@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KIT DIDÁTICO</title>
+    <style>
+
+	/* Cor da página */
+        body {
+            background-color: lightyellow;
+        }
+
+	/* Configuração "p"*/
+	p {
+            text-align: center;
+	    font-size: 10px; /* Tamanho da fonte */
+	    font-family: "Fonte1", "Fonte2", sans-serif;/* Fonte */
+	}
+
+	.nomes {
+   	    margin-bottom: 10px; /* Adicione margem inferior apenas ao segundo parágrafo */
+}
+
+	/* Configuração imagem*/
+        .imagem {
+            text-align: center;
+	margin-bottom: 20;
+        }
+
+	/* Alinhamento botões */
+        .button {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+	/* Configuração botões */
+        button {
+    	margin: 8px;
+   	width: 400px; /* Largura do botão */
+    	height: 50px; /* Altura do botão */
+    	background-color: darkblue; /* Cor de fundo */
+    	color: white; /* Cor do texto */
+    	border: none; /* Remova a borda dos botões, se desejar */
+    	padding: 10px 20px; /* Espaçamento interno dos botões */
+    	font-size: 30px; /* Tamanho da fonte dos botões */
+    	cursor: pointer; /* Cursor ao passar o mouse sobre os botões */
+	}
+    </style>
+
+</head>
+<body>
+	
+	<div class="imagem">	
+	<img src="Titulo.png" alt="Descrição da imagem" width="300" height="90">
+	</div>
+
+    <div class="button">
+        <button id="ebook">Ebook PDF</button>
+        <button id="dados">Dados Técnicos</button>
+        <button id="youtube">YouTube</button>
+    </div>
+
+    <script>
+        // Redirecionar para o primeiro PDF :
+        document.getElementById('ebook').addEventListener('click', function() {
+            window.location.href = 'https://www.google.com.br/';
+        });
+
+        // Redirecionar para o segundo PDF:
+        document.getElementById('dados').addEventListener('click', function() {
+            window.location.href = 'https://www.uol.com.br/';
+        });
+
+        // Redirecionar para o link do YouTube:
+        document.getElementById('youtube').addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/';
+        });
+    </script>
+
+	<div class="imagem">	
+	<img src="Projeto.png" alt="Descrição da imagem" width="250" height="150">
+	</div>
+	
+	<p>Desenvolvedores:</p>
+	<p class="nomes">Diego da Silva de Almeida, Julia Gonsales Sá, Julia Toniolo e Matheus Bezerra Santos</p>
+
+	<div class="imagem">	
+	<img src="cefsa.png" alt="Descrição da imagem" width="130" height="40">
+	</div>
+
+</body>
+</html>
